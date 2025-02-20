@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Morrigan</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=array@400,700&display=swap" rel="stylesheet">
+<style>
+#rusalka-title{
+  text-align: center;
+  font-size: 46px;
+  font-family: KingsCross;
+}
+#rusalka-head{
+       font-size: 30px;
+       font-family: 'Times New Roman', Times, serif;
+       margin: 20px; 
+       font-style: italic;
+}
+.rusalka-story {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  margin: 20px; 
+  padding: 10px; 
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(19, 7, 104, 0.1); 
+  border: 1px solid #ddd;
+}
+</style>
+  </head>
+<body>
+    <div class="header-container">
+        <div class="text"> <h1> Rusalka </h1> </div>
+        <div class="text"> <h1> Rusałka </h1> </div>
+        <div class="text"> <h1> Rusałki </h1> </div> 
+        <div class="text"> <h1> Pусалка </h1> </div>
+        <div class="text"> <h1>mavka</h1> </div>
+        <div class="text"> <h1> Mermaid </h1> </div>
+        <div class="text"> <h1> vodyanitsa </h1> </div>
+        <div class="text"> <h1> Water Spirit </h1> </div>
+        <div class="text"> <h1> Kupalka </h1> </div>
+        <div class="text"> <h1> рѹсалиѩ </h1> </div>
+    </div>
+
+    <div class="button-container"> 
+      
+        <div class="warriorToggle">
+            <input type="checkbox" id="plus-button">
+            <span class="warriorButton"></span>
+            <span class="warriorLabel">+</span>
+        </div>
+
+        <div class="warriorWideButton">
+          <input type="checkbox">
+          <div class="warriorButton"></div>
+          <div class="warriorLabel">=</div>
+        </div>
+
+        <div class="warriorToggle">
+          <input type="checkbox" id="minus-button" checked>
+          <span class="warriorButton"></span>
+          <span class="warriorLabel">–</span>
+      </div>
+    </div>
+
+    <div class="content-container">
+      
+            <div class="main-content">
+    <p class="rusalka-story" id="rusalka-head"> Slavic Mythology: Rusałka </p>
+    <p class="rusalka-story"> In pre-Christian Poland, Slavic water spirits called Rusałki were believed to be lake dwelling souls of children that inhabit the forests and lakes of western Poland. </p>
+    <p class="rusalka-story"> They are also thought to be the spirits of brides who died on their wedding night from an unnatural death and now take their revenge on any man they find near the lake and forest they inhabit. </p>
+    <p class="rusalka-story"> During Rusałki week, at the beginning of June, they are supposed to emerge from the water and climb into weeping willow and birch trees until night, when they dance in rings in the moonlight to lure men into the forest. </p> 
+    <p class="rusalka-story"> After that week, grass grows thicker where they trod. </p>
+    <p class="rusalka-story"> Rusalki apparently miss the human world and want to share the company of men, asking them for food. </p>
+    <p class="rusalka-story"> Those seduced, die in their arms.</p>
+    <p class="rusalka-story"> Rusalka is sad, but she is also smart. She takes what she needs, without being insulted by the world calling her a demon for it. Maybe she loves some of the men she kills, or maybe she doesn't. Either way she keeps moving forward.   </p>
+</div>
+
+<div class="folkCode">
+    <div class="folkCode-header">
+      Folk Code 
+    </div>
+    <p id="code-intro"> This area serves as a reference point to illustrate the modes of engagement available to you. </p>
+
+    <p id="code-intro"> Before diving into modifications, read the text to the left - the first adaptation of the folktale. </p>
+    
+    <p id="code-intro"> Naturally, this version has been filtered through my own interpretive lens. As with any retelling, subjectivity plays a role; the details presented here are those I consider important or interesting, drawn from a blend of literary and oral sources I've engaged with. Keep this in mind as you explore and reshape the narrative. </p>
+    
+    <p id="code"> + : A Different Lens </p>
+    
+    <p id="code-explain"> Shifting narratives, themes and interpretations with each press. This includes <span style="font-style: italic;"> Antonín Dvořák's </span> adaptation of Rusalka, as seen in the opera. </p>
+    
+    <p id="code"> - : Reset to Original </p>
+
+    <p id="code-explain"> It’s important to note that killing elements blocks the ‘+’ function from altering the narrative within the confines of that specific paragraph. This disruption serves to blur the lines between different adaptations and obscure the story itself. This is the culture of folklore; where stories are passed down through generations without fixed origins, the sources of a tale can often become elusive.  As stories are reshaped, they lose their original form. </p>
+    
+    <p id="code"> = : Killed Elements </p>
+    
+    <p id="code-explain"> With each retelling of folklore, the story becomes more and more distorted, with little pieces falling off when they don’t interest a particular storyteller, or tiny elements growing to outrageous sizes when they do. By pressing this button, you are performing subtle linguistic swaps or removals to create hybrid versions of the folktale. Those highlighted in yellow indicate killed or replaced elements. </p>
+</div>
+
+<div class="explanationArea">
+    <div class="explainHeader">
+        Explanation Area
+    </div>
+    <p id="explainText"> The three folklore's you are engaging with revolve around the forest as a central setting. The forest itself is symbolic, acting as a liminal space between the known and the unknown, it is the theatre of superstition.  </p>
+    <p id="explainText"> This interface sheds light onto the folklore that depict women as figures of power and agency. In some contexts, these narratives predate modern feminist movements, highlighting matriarchal societies where women assert dominance and defy traditional gender roles. <br> </br> In these stories, the women are allowed to be complex and the typical societal power dynamics are reversed, with men becoming the subjects of manipulation and control, challenging the conventional notion of male authority.</p>
+</div>
+
+  </div>
+
+<div id="canvas-container"> 
+   <script src="sketch.js"></script>
+</div>
+    <script>
+    const rusalkaAdaptation = {
+    "Slavic Mythology: ":"Antonín Dvořák's opera: ",
+    "In pre-Christian Poland, Slavic water spirits called Rusałki were believed to be lake dwelling souls of children that inhabit the forests and lakes of western Poland.":"There lived a beautiful water nymph named Rusalka and for years she had watched a human prince visit the lake she inhabits, lost in the wonder of his world and the distant songs of the forest.",
+    "They are also thought to be the spirits of brides who died on their wedding night from an unnatural death and now take their revenge on any man they find near the lake and forest they inhabit.":"Rusalka fell in love and longed to be with him. She sought out help from Ježibaba, who promised to turn her into a human to win his love in exchange for her voice.",
+    "During Rusałki week, at the beginning of June, they are supposed to emerge from the water and climb into weeping willow and birch trees until night, when they dance in rings in the moonlight to lure men into the forest.":" The prince was mesmerised by her beauty and the strange silence that surrounded her.",
+    "After that week, grass grows thicker where they trod.":"But then he met The Foreign Princess, a woman of speech and laughter, everything that Rusalka could not be and he grew distant. ",
+    "Rusalki apparently miss the human world and want to share the company of men, asking them for food.":"Rusalka’s heart broke and she returned to the lake alone, where Ježibaba offered her revenge. But Rusalka could not bring herself to take the path of vengeance.",
+    "Those seduced, die in their arms.":"The Prince eventually returns in search of Rusalka. She tells him that, because of his rejection, she is now a bludička, whose kiss would prove fatal to a mortal. In this form, Rusalka will live in the depths of the lake, only emerging to drag humans to their deaths. She fulfill's her lover’s request to die by her kiss and he passes in her arms, sealing both their fates.",
+    "Rusalka is sad, but she is also smart. She takes what she needs, without being insulted by the world calling her a demon for it. Maybe she loves some of the men she kills, or maybe she doesn't. Either way she keeps moving forward.":"Rusalka is lost forever to the depths of the lake, her tragic fate woven into the fabric of the water. "
+    };
+
+    const colorMapping = {
+    "Slavic Mythology: ": "blue",
+    "In pre-Christian Poland, Slavic water spirits called Rusałki were believed to be lake dwelling souls of children that inhabit the forests and lakes of western Poland.": "blue",
+    "They are also thought to be the spirits of brides who died on their wedding night from an unnatural death and now take their revenge on any man they find near the lake and forest they inhabit.": "blue",
+    "During Rusałki week, at the beginning of June, they are supposed to emerge from the water and climb into weeping willow and birch trees until night, when they dance in rings in the moonlight to lure men into the forest.": "blue",
+    "After that week, grass grows thicker where they trod.": "blue",
+    "Rusalki apparently miss the human world and want to share the company of men, asking them for food.": "blue",
+    "Those seduced, die in their arms.": "blue",
+    "Rusalka is sad, but she is also smart. She takes what she needs, without being insulted by the world calling her a demon for it. Maybe she loves some of the men she kills, or maybe she doesn't. Either way she keeps moving forward.": "blue",
+    "Rusalka is lost forever to the depths of the lake, her tragic fate woven into the fabric of the water.": "blue"
+};
+let currentAdaptationIndex = 0; 
+const adaptationKeys = Object.keys(rusalkaAdaptation); 
+
+function storeOriginalText() {
+  const paragraphs = document.querySelectorAll('.rusalka-story');
+  paragraphs.forEach(paragraph => {
+    if (!paragraph.dataset.originalText) {
+      paragraph.dataset.originalText = paragraph.innerHTML; 
+    }
+  });
+}
+
+function applyNextRusalkaAdaptation() {
+  const paragraphs = document.querySelectorAll('.rusalka-story');
+
+  if (currentAdaptationIndex < adaptationKeys.length) {
+    const key = adaptationKeys[currentAdaptationIndex]; 
+    const replacement = `<span style="color: ${colorMapping[key]};">${rusalkaAdaptation[key]}</span>`;
+
+    paragraphs.forEach(paragraph => {
+      const text = paragraph.innerHTML; 
+      if (text.includes(key)) {
+        paragraph.innerHTML = text.replace(key, replacement); 
+      }
+    });
+
+    currentAdaptationIndex++; 
+  } else {
+    console.log("All adaptations have been applied."); 
+  }
+}
+
+function revertToOriginalText() {
+  const paragraphs = document.querySelectorAll('.rusalka-story');
+  paragraphs.forEach(paragraph => {
+    if (paragraph.dataset.originalText) {
+      paragraph.innerHTML = paragraph.dataset.originalText; 
+    }
+  });
+  currentAdaptationIndex = 0; 
+}
+
+function setUpButtonEventListeners() {
+  const plusButton = document.getElementById('plus-button');
+  const minusButton = document.getElementById('minus-button');
+
+  storeOriginalText(); 
+
+  plusButton.addEventListener('click', () => {
+    applyNextRusalkaAdaptation(); 
+  });
+
+  minusButton.addEventListener('click', () => {
+    revertToOriginalText(); 
+  });
+}
+
+window.onload = setUpButtonEventListeners;
+
+const warriorWideButton = document.querySelector('.warriorWideButton input');
+
+warriorWideButton.addEventListener('click', () => {
+
+  const pairs = [
+   ["western","eastern"],
+   ["eastern","western"],
+   ["brides who died on their wedding night","young women who drowned"],
+   ["an unnatural"," a violent"],
+   ["a violent"," an unnatural"],
+   ["June","summer"],
+   ["summer","June"],
+   ["when they dance in rings in the moonlight","where they sing a song"],
+   ["food","sexual favours"],
+   ["sexual favours","food"],
+   ["die in their arms","are drowned"],
+   ["The Foreign Princess", "Cizí kněžna"],
+   ["Ježibaba","a witch"],
+   ["a witch","Baba Yaga"],
+   ["bludička","spirit of death"],
+   ["spirit of death","will o’ the wisp"],
+   ["will o' the wisp","bludička"]
+  ];
+
+  const pair = pairs[Math.floor(Math.random() * pairs.length)];
+
+  replaceWordInStory(pair[0], pair[1]);
+});
+
+function replaceWordInStory(targetWord, replacementWord) {
+  
+  const paragraphs = document.querySelectorAll('.rusalka-story');
+  
+  paragraphs.forEach(paragraph => {
+    const regex = new RegExp(`\\b${targetWord}\\b`, 'g'); 
+    paragraph.innerHTML = paragraph.innerHTML.replace(
+      regex,
+      `<span style="background-color: yellow;">${replacementWord}</span>`
+    );
+  });
+}
+const resizer = document.querySelector('.resizer');
+    const textArea = document.querySelector('.text-area');
+    const notesArea = document.querySelector('.notes-area');
+
+    let isDragging = false;
+
+    resizer.addEventListener('mousedown', () => {
+      isDragging = true;
+      document.body.style.cursor = 'col-resize';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const containerWidth = document.querySelector('.container').offsetWidth;
+      const newTextAreaWidth = (e.clientX / containerWidth) * 100;
+      textArea.style.flex = `0 0 ${newTextAreaWidth}%`;
+      notesArea.style.flex = `0 0 ${100 - newTextAreaWidth}%`;
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      document.body.style.cursor = 'default';
+    });
+
+    </script>
+  </body>
+</html>

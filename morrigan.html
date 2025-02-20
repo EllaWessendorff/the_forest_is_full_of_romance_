@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Morrigan</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=array@400,700&display=swap" rel="stylesheet">
+    <style>
+    
+#morrigan-title {
+      text-align: center;
+      font-size: 46px;
+      font-family: KingsCross;
+      }
+
+#morrigan-head{
+       font-size: 30px;
+       font-family: 'Times New Roman', Times, serif;
+       margin: 20px; 
+       font-style: italic;
+}
+
+.morrigan-story {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  margin: 20px; 
+  padding: 10px; 
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(19, 7, 104, 0.1); 
+  border: 1px solid #ddd;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="header-container">
+      <div class="text"> <h1> The Morrigan </h1> </div>
+      <div class="text"> <h1> Phantom Queen </h1> </div>
+      <div class="text"> <h1> Mór-ríoghan </h1> </div>
+      <div class="text"> <h1> Morrígu </h1> </div>
+      <div class="text"> <h1> Mórrígan </h1> </div>
+      <div class="text"> <h1> Badb </h1> </div>
+      <div class="text"> <h1> Macha </h1> </div>
+      <div class="text"> <h1> Ana </h1> </div>
+      <div class="text"> <h1> Banshee </h1> </div>
+      <div class="text"> <h1> Crow </h1> </div>
+    </div>
+
+    <div class="button-container"> 
+      
+      <div class="warriorToggle">
+          <input type="checkbox" id="plus-button">
+          <span class="warriorButton"></span>
+          <span class="warriorLabel">+</span>
+      </div>
+
+      <div class="warriorWideButton">
+        <input type="checkbox">
+        <div class="warriorButton"></div>
+        <div class="warriorLabel">=</div>
+      </div>
+
+      <div class="warriorToggle">
+        <input type="checkbox" id="minus-button" checked>
+        <span class="warriorButton"></span>
+        <span class="warriorLabel">–</span>
+    </div>
+  </div>
+
+  <div class="content-container">
+
+        <div class="main-content">
+    <p class="morrigan-story" id="morrigan-head"> Irish Mythology: The Mórrígan </p>
+    <p class="morrigan-story"> Within Irish mythology you can enter and access the otherworld through different points in the landscape, mist is seen as a veil to slip into another dimension. </p>
+    <p class="morrigan-story"> The Mórrígan is a collection of supernatural women - a shapeshifting goddess of war, destiny, and fertility. Deeply tied to both warfare and the land, she serves a protective and tutelary role, embodying the complexities of life and death. </p>
+    <p class="morrigan-story"> In our local reality, this reality right now that we can touch, we see the Morrigan as a crow. Crows are carrion birds, meaning they feast on already dead things. They were known to show up to battlefields and peck at the fallen once the battle had finished. The Morrigan’s association with the crow encapsulates her way of operating: she is a shadow that lingers on the battlefield, <span style="color: red;">striking fear and confusion among soldiers to sway the tide of battle to her favoured side.</span> The Morrigan’s power is not just in physical warfare but in also psychological dominance. </p>
+    <p class="morrigan-story"> The Morrigan’s complex relationship with the warrior Cú Chulainn is a key tale in Irish mythology. Their story begins during the Táin Bó Cúailnge, when Cú Chulainn defended Ulster against an army led by Queen Medb. Between battles, the Morrigan attempted to seduce him, offering both her love and her aid in the fight. </p>
+    <p class="morrigan-story"> <span style="color: red;"> Despite her beauty and power</span>, Cú Chulainn rejected her advances. The Morrigan set out <span style="color: red;">for revenge</span>.</p>
+    <p class="morrigan-story"> To hinder Cú Chulainn, she took the forms of a heifer, an eel, and a female wolf, challenging him throughout his battle with Queen Medb. In the end, Cú Chulainn was mortally wounded despite successfully holding off Medb's forces. Knowing his time had come, he tied himself to a large stone to die standing, facing his enemies. For three days, he remained upright, striking fear into those who dared approach. </p>
+    <p class="morrigan-story"> Only when a crow perched on his shoulder, did his enemies know he had passed.</p>
+    <p class="morrigan-story"> War and death gods are often seen as evil, but the Morrigan transcends such binaries. The Christian notion of dark and light as opposing forces does not apply here; the Morrigan is a complex and dominant force who <span style="color: red;">embodies life and death as interdependent forces. </span> The crow, being a carrion bird, thrives on death but ensures nothing is wasted, returning energy to the earth. Similarly, the Morrígan’s actions, though seemingly destructive, are <span style="color: red;">part of a larger, natural order that sustains life.</span> </p>
+  </div>
+
+  <div class="folkCode">
+    <div class="folkCode-header">
+      Folk Code 
+    </div>
+    <p id="code-intro"> This area serves as a reference point to illustrate the modes of engagement available to you. </p>
+
+    <p id="code-intro"> Before diving into modifications, read the text to the left - the first adaptation of the folktale. </p>
+    
+    <p id="code-intro"> Naturally, this version has been filtered through my own interpretive lens. As with any retelling, subjectivity plays a role; the details presented here are those I consider important or interesting, drawn from a blend of literary and oral sources I've engaged with. Keep this in mind as you explore and reshape the narrative. </p>
+    
+    <p id="code"> + : A Different Lens </p>
+    
+    <p id="code-explain"> Shifting narratives, themes and interpretations with each press. This includes the relationship between The Morrigan and Cu Chulainn from <span style="font-style: italic;"> a warrior's perspective</span>.</p>
+    
+    <p id="code"> - : Reset to Original </p>
+
+    <p id="code-explain"> As stories are reshaped, they lose their original form. Use this button to return the narrative to its intial form.</p>
+    
+    <p id="code"> = : Killed Elements </p>
+    
+    <p id="code-explain"> By pressing this button, you are performing subtle linguistic swaps or removals to create hybrid versions of the folktale. Those highlighted in yellow indicate killed or replaced elements. </p>
+</div>
+
+<div class="explanationArea">
+  <div class="explainHeader">
+      Explanation Area
+  </div>
+  <p id="explainText"> The three folklore's you are engaging with revolve around the forest as a central setting. The forest itself is symbolic, acting as a liminal space between the known and the unknown, it is the theatre of superstition.  </p>
+  <p id="explainText"> This interface sheds light onto the folklore that depict women as figures of power and agency. In some contexts, these narratives predate modern feminist movements, highlighting matriarchal societies where women assert dominance and defy traditional gender roles.<br> </br> In these stories, the women are allowed to be complex and the typical societal power dynamics are reversed, with men becoming the subjects of manipulation and control, challenging the conventional notion of male authority.</p>
+</div>
+
+</div>
+
+    <div id="canvas-container">
+      <script src="sketch.js"></script>
+    </div>
+
+    <script>
+
+  //warrior's lens
+  const morriganAdaptation1 = {
+    "Irish Mythology: ":"A Warrior's Lens: ",
+    "Despite her beauty and power": "To avoid an easy victory",
+    "for revenge": "to challenge and incite him through battle",
+    "striking fear and confusion among soldiers to sway the tide of battle to her favoured side": "a catalyst for transformation, challenging warriors through trials and provocation",
+    "embodies life and death as interdependent forces.": "can be understood as a divine force of incitement.",
+    "part of a larger, natural order that sustains life.": "a purposeful push designed to test and elevate warriors."
+};
+
+// colour code for the warrior's lens  
+const colorMapping = {
+   "Irish Mythology: ": "blue",
+    "crow":"The Morrigan",
+    "Despite her beauty and power": "blue",
+    "for revenge": "blue",
+    "striking fear and confusion among soldiers to sway the tide of battle to her favoured side": "blue",
+    "embodies life and death as interdependent forces.": "blue",
+    "part of a larger, natural order that sustains life.": "blue"
+};
+
+function storeOriginalText() {
+    const paragraphs = document.querySelectorAll('.morrigan-story');
+    paragraphs.forEach(paragraph => {
+        if (!paragraph.dataset.originalText) {
+            paragraph.dataset.originalText = paragraph.innerHTML; 
+        }
+    });
+}
+
+function applyMorriganAdaptation() {
+    const paragraphs = document.querySelectorAll('.morrigan-story');
+    paragraphs.forEach(paragraph => {
+        let text = paragraph.dataset.originalText; 
+        for (let key in morriganAdaptation1) {
+            if (text.includes(key)) {
+                const replacement = `<span style="color: ${colorMapping[key]};">${morriganAdaptation1[key]}</span>`;
+                text = text.replace(key, replacement);
+            }
+        }
+        paragraph.innerHTML = text;  
+    });
+}
+
+function revertToOriginalText() {
+    const paragraphs = document.querySelectorAll('.morrigan-story');
+    paragraphs.forEach(paragraph => {
+        if (paragraph.dataset.originalText) {
+            paragraph.innerHTML = paragraph.dataset.originalText; 
+        }
+    });
+}
+
+function setUpButtonEventListeners() {
+    const plusButton = document.getElementById('plus-button');
+    const minusButton = document.getElementById('minus-button');
+ 
+    storeOriginalText();
+
+    plusButton.addEventListener('click', function() {
+        applyMorriganAdaptation();
+    });
+
+    minusButton.addEventListener('click', function() {
+        revertToOriginalText();
+    });
+}
+
+window.onload = setUpButtonEventListeners;
+
+const warriorWideButton = document.querySelector('.warriorWideButton input');
+
+warriorWideButton.addEventListener('click', () => {
+
+  const pairs = [
+    ["a crow perched", "The Morrigan perched"],
+    ["collection", "trio"],
+    ["trio","collection"],
+    ["shadow", "mist"],
+    ["mist","shadow"],
+    ["battlefield","battleground"],
+    ["battleground","battlefield"],
+    ["a shapeshifting goddess of war, destiny, and fertility", "Badb, Macha, and Ana"],
+    ["took the forms of","changed forms into"],
+    ["a crow","a raven"],
+    ["took the forms of","changed forms into"],
+    ["hinder","delay"],
+    ["Táin Bó Cúailnge","Cattle Raid of Cooley"],
+    ["passed","died"],
+    ["died","passed"]
+  ];
+
+  const pair = pairs[Math.floor(Math.random() * pairs.length)];
+  
+  replaceWordInStory(pair[0], pair[1]);
+});
+
+function replaceWordInStory(targetWord, replacementWord) {
+  const paragraphs = document.querySelectorAll('.morrigan-story');
+  const fragment = document.createDocumentFragment();
+  
+  paragraphs.forEach(paragraph => {
+    const regex = new RegExp(`\\b${targetWord}\\b`, 'g'); 
+    paragraph.innerHTML = paragraph.innerHTML.replace(
+      regex,
+      `<span style="background-color: yellow;">${replacementWord}</span>`
+    );
+  });
+}
+  
+    </script>
+  </body>
+</html>

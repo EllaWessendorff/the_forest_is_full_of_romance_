@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Morrigan</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=array@400,700&display=swap" rel="stylesheet">
+    <style> 
+
+#erl-title{
+  text-align: center;
+  font-size: 46px;
+  font-family: KingsCross;
+}
+#erl-head{
+       font-size: 30px;
+       font-family: 'Times New Roman', Times, serif;
+       margin: 20px; 
+       font-style: italic;
+}
+.erl-story{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  margin: 20px; 
+  padding: 10px; 
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(19, 7, 104, 0.1); 
+  border: 1px solid #ddd;
+}
+        
+        </style>
+  </head>
+  <body>
+    
+    <div class="header-container">
+        <div class="text"> <h1> The Erl-King </h1> </div>
+        <div class="text"> <h1> Erlkönig </h1> </div>
+       <div class="text"> <h1> Elbkönig </h1> </div> 
+        <div class="text"> <h1> alder-king </h1> </div>
+        <div class="text"> <h1> ellekonge </h1> </div>
+        <div class="text"> <h1> black alder </h1> </div>
+        <div class="text"> <h1> ellekonge </h1> </div>
+        <div class="text"> <h1> elverkongens datter </h1> </div>
+        <div class="text"> <h1> Elbenkönig </h1> </div>
+        <div class="text"> <h1> King of the Fairies </h1> </div> 
+    </div>
+
+   <div class="button-container"> 
+      
+        <div class="warriorToggle">
+            <input type="checkbox" id="plus-button">
+            <span class="warriorButton"></span>
+            <span class="warriorLabel">+</span>
+        </div>
+
+        <div class="warriorWideButton">
+          <input type="checkbox">
+          <div class="warriorButton"></div>
+          <div class="warriorLabel">=</div>
+        </div>
+
+        <div class="warriorToggle">
+          <input type="checkbox" id="minus-button" checked>
+          <span class="warriorButton"></span>
+          <span class="warriorLabel">–</span>
+      </div>
+    </div>
+    <div class="content-container">
+    
+            <div class="main-content">
+            <p class="erl-story" id="erl-head"> Germanic Mythology: The Erl King </p>
+            <p class="erl-story">The tale of The Erlking has been passed down in various forms through oral tradition before being adapted into romantic german literature such as Goethe’s famous ballad in the late 18th century.</p>
+            <p class="erl-story">One evening, a father and his young son were travelling through a dark forest. The boy began to see a mysterious figure following them—a tall, dark figure wearing a crown that was moving quickly through the trees.</p>
+            <p class="erl-story">The Erlkönig was calling to the boy from the edge of the woods, inviting him to a beautiful and wondrous realm, where he would never have to be afraid again.</p>
+            <p class="erl-story">The boy was captivated by the voice but also terrified, he tried telling his father the Erlkönig was reaching for him but the father dismissed it as imagination, that it was just the wind causing shadows to move in the forest. </p>
+            <p class="erl-story">As the Erlkönig’s whispers grew stronger and more hypnotic, the boy weakened. His power could not be avoided, no matter how fast they rode, the figure drew closer, and the boy fell weaker. By the time they reached the village, the boy had fallen limp in his fathers arms and the Erlkönig had claimed him.</p>
+            <p class="erl-story">The Erlking was said to have the power to seduce and deceive children, he would speak to them in sweet and alluring voices, promising them riches, pleasure, and an escape from the hardships of life.</p>
+            <p class="erl-story">Some say the Erlkönig is not a malicious figure, but rather a harbinger of death, claiming those destined to die, luring them away with promises of peace.</p>
+</div>
+
+
+<div class="folkCode">
+    <div class="folkCode-header">
+      Folk Code 
+    </div>
+    
+    <p id="code-intro"> This area serves as a reference point to illustrate the modes of engagement available to you. </p>
+
+    <p id="code-intro"> Before diving into modifications, read the text to the left - the first adaptation of the folktale. </p>
+    
+    <p id="code-intro"> Naturally, this version has been filtered through my own interpretive lens. As with any retelling, subjectivity plays a role; the details presented here are those I consider important or interesting, drawn from a blend of literary and oral sources I've engaged with. Keep this in mind as you explore and reshape the narrative. </p>
+    
+    <p id="code"> + : A Different Lens </p>
+    
+    <p id="code-explain"> Shifting narratives, themes and interpretations with each press. This includes <span style="font-style: italic;"> Angela Carter’s </span> adaptation of The Erl-king, as seen in <span style="font-style: italic;"> ‘The Bloody Chamber’.</span> </p>
+    
+    <p id="code"> - : Reset to Original </p>
+
+    <p id="code-explain"> This allows you to reset the narrative to it's orginal state. <br> <br />It’s important to note that killing elements blocks the ‘+’ function from altering the narrative within the confines of that specific paragraph. This disruption serves to blur the lines between different adaptations and obscure the story itself. This is the culture of folklore; where stories are passed down through generations without fixed origins, the sources of a tale can often become elusive.  As stories are reshaped, they lose their original form. </p>
+    
+    <p id="code"> = : Killed Elements </p>
+    
+    <p id="code-explain"> With each retelling of folklore, the story becomes more and more distorted, with little pieces falling off when they don’t interest a particular storyteller, or tiny elements growing to outrageous sizes when they do. By pressing this button, you are performing subtle linguistic swaps or removals to create hybrid versions of the folktale. Those highlighted in yellow indicate killed or replaced elements. </p>
+</div>
+<div class="explanationArea">
+    <div class="explainHeader">
+        Explanation Area
+    </div>
+    <p id="explainText"> The three folklore's you are engaging with revolve around the forest as a central setting. The forest itself is symbolic, acting as a liminal space between the known and the unknown, it is the theatre of superstition.  </p>
+    <p id="explainText"> This interface sheds light onto the folklore that depict women as figures of power and agency. In some contexts, these narratives predate modern feminist movements, highlighting matriarchal societies where women assert dominance and defy traditional gender roles. <br> </br> In these stories, the women are allowed to be complex and the typical societal power dynamics are reversed, with men becoming the subjects of manipulation and control, challenging the conventional notion of male authority.</p>
+
+</div>
+  </div>
+
+    <div id="canvas-container">
+      <script src="sketch.js"></script>
+    </div>
+
+<script>
+
+    const erlAdaptation = {
+    "Germanic Mythology: ":"Angela Carter's: ",
+    "The tale of The Erlking has been passed down in various forms through oral tradition before being adapted into romantic german literature such as Goethe’s famous ballad in the late 18th century.":"In Angela Carter's adaptation, the Erlking is a powerful and enigmatic figure who lives in a magical and unsettling forest. He is both seductive and terrifying, described as a creature who watches and controls everything in his domain, especially women. His presence in the forest represents a dark, almost predatory force, yet there’s a magnetic allure to him.",
+    "One evening, a father and his young son were travelling through a dark forest. The boy began to see a mysterious figure following them—a tall, dark figure wearing a crown that was moving quickly through the trees.":"The narrative is told from the perspective of a young woman, who enters the forest, drawn by the Erlking’s allure. As she encounters him, the Erlking uses his charm and supernatural powers to entrap her.",
+    "The Erlkönig was calling to the boy from the edge of the woods, inviting him to a beautiful and wondrous realm, where he would never have to be afraid again.":"In this retelling, the forest is symbolic of an erotic, primal realm where boundaries are blurred. The Erlking’s home is both a sanctuary and a prison, a place where time loses its meaning, and the girl’s agency becomes entangled with his control. She discovers that he keeps birds in cages - birds that were once women, now reduced to passive, ornamental beings stripped of their freedom.",
+    "The boy was captivated by the voice but also terrified, he tried telling his father the Erlkönig was reaching for him but the father dismissed it as imagination, that it was just the wind causing shadows to move in the forest.":"He lures her with promises of pleasure, but this pleasure ultimately comes at the cost of identity and freedom. She begins to understand the full implications of his power and struggles with her response to his control, making her a more active participant in her fate than in the original folktale.",
+    "As the Erlkönig’s whispers grew stronger and more hypnotic, the boy weakened. His power could not be avoided, no matter how fast they rode, the figure drew closer, and the boy fell weaker. By the time they reached the village, the boy had fallen limp in his fathers arms and the Erlkönig had claimed him.":"There is an unsettling exchange of power as the Erlking and the woman interact, they both try to dominate the other in different ways. The girl is not a passive victim in this retelling. She resists the Erlking’s overtures and attempts at domination, even as she is drawn to his power.",
+    "The Erlking was said to have the power to seduce and deceive children, he would speak to them in sweet and alluring voices, promising them riches, pleasure, and an escape from the hardships of life.":"Carter's version of the tale subverts the traditional roles in the folk tale and highlights the girl’s evolving awareness of her own desires and autonomy. She becomes an active participant in the encounter, understanding her own sexuality and power.",
+    "Some say the Erlkönig is not a malicious figure, but rather a harbinger of death, claiming those destined to die, luring them away with promises of peace.":"In the end, she breaks the cycle of entrapment and strangles the Erlking with his own hair. The hair, which had previously represented the tangled mist in the thickets of the forest, his “beard that flossed the lower branches of the trees and bushes”. His ability to entangle and bind, becomes the very instrument of his undoing."
+    }
+   
+    const colorMapping = {
+    "Germanic Mythology: ": "red",
+    "The tale of The Erlking has been passed down in various forms through oral tradition before being adapted into romantic german literature such as Goethe’s famous ballad in the late 18th century.":"red",
+    "One evening, a father and his young son were travelling through a dark forest. The boy began to see a mysterious figure following them—a tall, dark figure wearing a crown that was moving quickly through the trees.":"red",
+    "The Erlkönig was calling to the boy from the edge of the woods, inviting him to a beautiful and wondrous realm, where he would never have to be afraid again.":"red",
+    "The boy was captivated by the voice but also terrified, he tried telling his father the Erlkönig was reaching for him but the father dismissed it as imagination, that it was just the wind causing shadows to move in the forest.":"red",
+    "As the Erlkönig’s whispers grew stronger and more hypnotic, the boy weakened. His power could not be avoided, no matter how fast they rode, the figure drew closer, and the boy fell weaker. By the time they reached the village, the boy had fallen limp in his fathers arms and the Erlkönig had claimed him.":"red",
+    "The Erlking was said to have the power to seduce and deceive children, he would speak to them in sweet and alluring voices, promising them riches, pleasure, and an escape from the hardships of life.":"red",
+    "Some say the Erlkönig is not a malicious figure, but rather a harbinger of death, claiming those destined to die, luring them away with promises of peace.":"red",
+};
+
+let currentAdaptationIndex = 0; 
+const adaptationKeys = Object.keys(erlAdaptation); 
+
+function storeOriginalText() {
+  const paragraphs = document.querySelectorAll('.erl-story');
+  paragraphs.forEach(paragraph => {
+    if (!paragraph.dataset.originalText) {
+      paragraph.dataset.originalText = paragraph.innerHTML; 
+    }
+  });
+}
+
+function applyNextErlAdaptation() {
+  const paragraphs = document.querySelectorAll('.erl-story');
+
+  if (currentAdaptationIndex < adaptationKeys.length) {
+    const key = adaptationKeys[currentAdaptationIndex];
+    const replacement = `<span style="color: ${colorMapping[key]};">${erlAdaptation[key]}</span>`;
+
+    paragraphs.forEach(paragraph => {
+      const text = paragraph.innerHTML; 
+      if (text.includes(key)) {
+        paragraph.innerHTML = text.replace(key, replacement);
+      }
+    });
+
+    currentAdaptationIndex++; 
+  } else {
+    console.log("All adaptations have been applied."); 
+  }
+}
+
+function revertToOriginalText() {
+  const paragraphs = document.querySelectorAll('.erl-story');
+  paragraphs.forEach(paragraph => {
+    if (paragraph.dataset.originalText) {
+      paragraph.innerHTML = paragraph.dataset.originalText; 
+    }
+  });
+  currentAdaptationIndex = 0; 
+}
+
+function setUpButtonEventListeners() {
+  const plusButton = document.getElementById('plus-button');
+  const minusButton = document.getElementById('minus-button');
+
+  storeOriginalText(); 
+
+  plusButton.addEventListener('click', () => {
+    applyNextErlAdaptation(); 
+  });
+
+  minusButton.addEventListener('click', () => {
+    revertToOriginalText(); 
+  });
+}
+
+window.onload = setUpButtonEventListeners;
+
+
+
+const warriorWideButton = document.querySelector('.warriorWideButton input');
+
+warriorWideButton.addEventListener('click', () => {
+
+  const pairs = [
+   ["One evening, a","A"],
+   ["mysterious","="],
+   ["beautiful and wondrous realm, ","realm "],
+   ["riches, pleasure, and","riches and"],
+   ["Erlking's","Erlkönig's"],
+   ["Erlking","Erlkönig"],
+   ["entrap","entangle"],
+   ["drawn","lured"],
+   ["ornamental","voiceless"],
+   ["passive","powerless"],
+   ["beings","creatures"],
+   ["desires and","="],
+   [", voiceless","="],
+   ["supernatural","="]
+
+  ];
+
+  const pair = pairs[Math.floor(Math.random() * pairs.length)];
+
+  replaceWordInStory(pair[0], pair[1]);
+});
+
+
+function replaceWordInStory(targetWord, replacementWord) {
+  const paragraphs = document.querySelectorAll('.erl-story');
+  
+  paragraphs.forEach(paragraph => {
+    
+    const regex = new RegExp(`\\b${targetWord}\\b`, 'g'); 
+    paragraph.innerHTML = paragraph.innerHTML.replace(
+      regex,
+      `<span style="background-color: yellow;">${replacementWord}</span>`
+    );
+  });
+}
+const resizer = document.querySelector('.resizer');
+    const textArea = document.querySelector('.text-area');
+    const notesArea = document.querySelector('.notes-area');
+
+    let isDragging = false;
+
+    resizer.addEventListener('mousedown', () => {
+      isDragging = true;
+      document.body.style.cursor = 'col-resize';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const containerWidth = document.querySelector('.container').offsetWidth;
+      const newTextAreaWidth = (e.clientX / containerWidth) * 100;
+      textArea.style.flex = `0 0 ${newTextAreaWidth}%`;
+      notesArea.style.flex = `0 0 ${100 - newTextAreaWidth}%`;
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      document.body.style.cursor = 'default';
+    });
+
+    </script>
+  </body>
+</html>
